@@ -3,10 +3,10 @@
 process FASTQC {
 
     container "staphb/fastqc:latest"
-    publishDir "results/fastqc/raw_data", mode: 'copy'
+    publishDir "results/fastqc/raw_data/${sample_id}", mode: 'copy'
 
     input:
-    path reads
+    tuple val(sample_id), path(read1), path(read2)
 
     output:
     path "*_fastqc.zip", emit: zip
@@ -14,6 +14,6 @@ process FASTQC {
 
     script:
     """
-    fastqc ${reads} --outdir results/fastqc/raw_data
+    fastqc $read1 $read2
     """
 }

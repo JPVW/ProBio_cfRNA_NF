@@ -1,0 +1,14 @@
+# Nextflow & Snakemake
+work/
+.nextflow*
+.snakemake/
+*.nf.cache
+*.dot
+*.dag.png
+.nf-work/
+
+results/
+data/
+
+resource/genomedir/
+singularity_cache

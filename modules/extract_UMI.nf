@@ -1,7 +1,6 @@
-#!/usr/bin/env nextflow
-
 process EXTRACT_UMI {
-
+    label "process_single"
+    label "process_long"
 
     container "https://depot.galaxyproject.org/singularity/umi_tools:1.1.5--py39hf95cd2a_0"
     publishDir "results/UMI_extracted/${sample_id}", mode: "copy"

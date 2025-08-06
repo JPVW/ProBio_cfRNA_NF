@@ -1,5 +1,6 @@
 process MERGE_SPLICE_JUNCTIONS {
-
+    label 'process_medium'
+    
     publishDir "results", method: 'copy'
 
     input:

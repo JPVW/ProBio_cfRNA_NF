@@ -11,4 +11,7 @@ results/
 data/
 
 resource/genomedir/
+resource/AR_subset_VanAllen/
+resource/snpeff_cache/
+resource/vep_cache/
 singularity_cache

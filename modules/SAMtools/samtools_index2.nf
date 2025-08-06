@@ -1,20 +1,18 @@
-process SAMTOOLS_INDEX {
+process SAMTOOLS_INDEX2 {
     label 'process_low'
     
     container 'docker://jpvw/probio_cfrna_tools:1.0'
 
-    publishDir "results/STAR_2pass/${sample_id}" , mode: 'copy'
+    publishDir "results/RNA_variant_calling/${sample_id}" , mode: 'copy'
 
     input:
         tuple val(sample_id), path(input_bam)
-        //tuple val(sample_id), path(input_exon_bam)
 
     output:
         tuple val(sample_id), path(input_bam), path("${input_bam}.bai") , emit: bai
-        //tuple val(sample_id), path(input_exon_bam), path("${input_exon_bam}.bai") , emit: exon_bai
+
     script:
     """
     samtools index ${input_bam}
     """
-// samtools index ${input_exon_bam}
 }

@@ -1,6 +1,5 @@
-#!bin/env/usr nextflow
-
 process STAR_1PASS {
+    label 'process_high'
 
     container "https://depot.galaxyproject.org/singularity/star%3A2.7.6a--0"
     publishDir "results/STAR_1pass/${sample_id}", mode: 'copy'

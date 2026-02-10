@@ -17,7 +17,7 @@ process SPLITNCIGARREADS {
     script:
     """
     gatk SplitNCigarReads \
-        -R $fasta \
+        -R ${fasta} \
         -I ${dedup_bam} \
         -O ${sample_id}_SplitNCigar.bam
     """

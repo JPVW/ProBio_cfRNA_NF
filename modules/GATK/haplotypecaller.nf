@@ -26,6 +26,6 @@ process HAPLOTYPECALLER {
         --reference $fasta \
         -dont-use-soft-clipped-bases \
         --standard-min-confidence-threshold-for-calling 20 \
-        --dbsnp $known_vcf
+        --dbsnp ${known_vcf}
     """
 }

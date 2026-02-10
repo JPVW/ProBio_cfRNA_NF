@@ -19,9 +19,9 @@ process BASERECALIBRATOR {
     script:
     """
     gatk BaseRecalibrator \
-        -R $fasta \
+        -R ${fasta} \
         -I ${split_bam} \
-        --known-sites $known_vcf \
+        --known-sites ${known_vcf} \
         --use-original-qualities \
         -O ${sample_id}_baserecalibrator.table
     """

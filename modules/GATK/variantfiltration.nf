@@ -23,5 +23,11 @@ process VARIANTFILTRATION {
         --variant $vcf \\
         --output ${sample_id}.vcf.gz \\
         --reference $fasta \\
+        --window 35 \\
+        --cluster 3 \\
+        --filter-name "FS" \\
+        --filter "FS > 30.0" \\
+        --filter-name "QD" \\
+        --filter "QD < 2.0" \\
     """
 }

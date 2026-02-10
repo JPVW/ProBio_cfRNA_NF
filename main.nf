@@ -64,26 +64,26 @@ params.report_id = "Test_pipline_subsampled"
 
 // Pipeline parameters
     // provide new indices when running on a new server
-params.STAR_1pass_index_zip = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ARV_fastas/ARV_RNAseq/v0.2/GRCh37/GRCh37.p13_gencodev30_withspikes_STAR_2.7.10b"
-params.STAR_2pass_fasta = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ARV_fastas/ARV_RNAseq/v0.2/GRCh37/GRCh37.p13.genome_with_spikes.fa"
-params.fasta_fai = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ProBio_cfRNA_NF/resources/GRCh37.p13.genome_with_spikes.fa.fai"
-params.fasta_dict = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ProBio_cfRNA_NF/resources/GRCh37.p13.genome_with_spikes.dict"
-params.STAR_2pass_gtf = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ARV_fastas/ARV_RNAseq/v0.2/GRCh37/gencode.v30lift37.annotation.with.spikes.gtf"
-params.STAR_AR_index = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ProBio_cfRNA_NF/resources/AR_subset_VanAllen"
-params.STAR_AR_gtf = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ProBio_cfRNA_NF/resources/manual_AR_isoforms_VanAllen.gtf"
-params.HSmetrics_target = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ProBio_cfRNA_NF/resources/Target_AR_mini_V2_new.interval_list"
-params.HSmetrics_bait = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ProBio_cfRNA_NF/resources/Target_AR_mini_V2_new.interval_list"
-params.HSmetrics_refFlat = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ARV_fastas/ARV_RNAseq/v0.2/GRCh37/gencode.v30lift37.annotation.with.spikes.refFlat.txt.gz"
-params.HSmetrics_bed = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ARV_fastas/ARV_RNAseq/v0.2/GRCh37/gencode.v30lift37.annotation.with.spikes.sorted.bed"
-params.HSmetrics_bed12 = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ARV_fastas/ARV_RNAseq/v0.2/GRCh37/gencode.v30lift37.annotation.with.spikes.bed12"
-params.known_vcf = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ARV_fastas/ARV_RNAseq/v0.2/GRCh37/db_SNP_renamedChr_All.vcf.gz"
-params.known_vcf_tbi = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ARV_fastas/ARV_RNAseq/v0.2/GRCh37/db_SNP_renamedChr_All.vcf.gz.tbi"
+params.STAR_1pass_index_zip = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/GRCh37/star2.7.10b"
+params.STAR_2pass_fasta = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/GRCh37.p13.genome_with_spikes.fa"
+params.fasta_fai = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/GRCh37.p13.genome_with_spikes.fa.fai"
+params.fasta_dict = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/GRCh37.p13.genome_with_spikes.dict"
+params.STAR_2pass_gtf = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/gencode.v30lift37.annotation.with.spikes.gtf"
+params.STAR_AR_index = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/GRCh37/AR_subset_VanAllen"
+params.STAR_AR_gtf = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/manual_AR_isoforms_VanAllen.gtf"
+params.HSmetrics_target = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/Target_AR_mini_V2.interval_list"
+params.HSmetrics_bait = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/Target_AR_mini_V2.interval_list"
+params.HSmetrics_refFlat = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/gencode.v30lift37.annotation.with.spikes.refFlat.txt.gz"
+params.HSmetrics_bed = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/gencode.v30lift37.annotation.with.spikes.sorted.bed"
+params.HSmetrics_bed12 = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/gencode.v30lift37.annotation.with.spikes.bed12"
+params.known_vcf = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/renamed.af-only-gnomad.raw.sites.grch37.vcf.gz"
+params.known_vcf_tbi = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/renamed.af-only-gnomad.raw.sites.grch37.vcf.gz.tbi"
 
 def db_name = "GRCh37.75"
 def species = "homo_sapiens"
 def assembly = "GRCh37"
 def version = "114"
-def cache = "/kyukon/scratch/gent/vo/002/gvo00224/TOBI/Projects/AR-burden/AR-Burden/ProBio_cfRNA_NF/resources/vep_cache/homo_sapiens" // to change when running on new server
+def cache = "/groups/wyattgrp/users/jvanwelkenhuyzen/pipelines/resources/RNAseq/vep_cache/homo_sapiens" // to change when running on new server
 
 workflow  {
 
@@ -102,7 +102,8 @@ workflow  {
     TRIM_GALORE(EXTRACT_UMI.out.UMI_extracted)
 
     // First round of STAR mapping
-    STAR_1PASS(TRIM_GALORE.out.trimmed_reads, file(params.STAR_1pass_index_zip))
+    STAR_1PASS(TRIM_GALORE.out.trimmed_reads, 
+                file(params.STAR_1pass_index_zip))
 
     // Combine SJ output from STAR pass 1 into 1 file
     STAR_1PASS.out.spl_junc_tab.map { id, file -> file }
@@ -112,58 +113,114 @@ workflow  {
     MERGE_SPLICE_JUNCTIONS(all_sj_files)
 
     // Generate new index of the genome for STAR to get better alignments around novel splice junctions
-
-    STAR_GENOME(file(params.STAR_2pass_fasta), file(params.STAR_2pass_gtf), MERGE_SPLICE_JUNCTIONS.out.merged_sjs)
+    STAR_GENOME(file(params.STAR_2pass_fasta), 
+                file(params.STAR_2pass_gtf), 
+                MERGE_SPLICE_JUNCTIONS.out.merged_sjs)
 
     // Run 2nd round of STAR mapping and run SAMtools on bam output and after BEDtools intersect
+    STAR_2PASS(TRIM_GALORE.out.trimmed_reads, 
+                STAR_GENOME.out.genomedir, 
+                file(params.STAR_2pass_gtf))
 
-    STAR_2PASS(TRIM_GALORE.out.trimmed_reads, STAR_GENOME.out.genomedir, file(params.STAR_2pass_gtf))
-    BEDTOOLS_INTERSECT(STAR_2PASS.out.bam_sorted_aligned, file(params.STAR_2pass_gtf))
+    BEDTOOLS_INTERSECT(STAR_2PASS.out.bam_sorted_aligned, 
+                file(params.STAR_2pass_gtf))
     
     ch_star2_sorted_bai = SAMTOOLS_INDEX1(STAR_2PASS.out.bam_sorted_aligned) 
     ch_star2_exon_bai   = SAMTOOLS_INDEX2(BEDTOOLS_INTERSECT.out.junction_bam)
 
     
     // Rsubread to count genes after 2nd round of STAR
-    UMI_TOOLS_DEDUP(ch_star2_sorted_bai, ch_star2_exon_bai, file(params.STAR_2pass_gtf))
+    UMI_TOOLS_DEDUP(ch_star2_sorted_bai, 
+                    ch_star2_exon_bai, 
+                    file(params.STAR_2pass_gtf))
+
     ch_dedup_bam = UMI_TOOLS_DEDUP.out.dedup_bam.join(UMI_TOOLS_DEDUP.out.dedup_bai, by: [0])
-    FEATURECOUNTS(UMI_TOOLS_DEDUP.out.dedup_bam, UMI_TOOLS_DEDUP.out.dedup_exon_bam, UMI_TOOLS_DEDUP.out.dedup_unique_bam, file(params.STAR_2pass_gtf))
+    FEATURECOUNTS(UMI_TOOLS_DEDUP.out.dedup_bam, 
+                    UMI_TOOLS_DEDUP.out.dedup_exon_bam, 
+                    UMI_TOOLS_DEDUP.out.dedup_unique_bam, 
+                    file(params.STAR_2pass_gtf))
 
     
     // Subset reads mapping to the AR locus 'chrX:66753830-67011796' 
     AR_SUBSET(ch_star2_sorted_bai)
 
     // Remap AR subset reads to specific AR-V fasta file
-    STAR_AR(AR_SUBSET.out.fq1, AR_SUBSET.out.fq2, file(params.STAR_AR_index), file(params.STAR_AR_gtf))
+    STAR_AR(AR_SUBSET.out.fq1, 
+            AR_SUBSET.out.fq2, 
+            file(params.STAR_AR_index), 
+            file(params.STAR_AR_gtf))
 
     // Count AR-V isoforms
-    STAR_AR_COUNTING(STAR_AR.out.bam_sorted_aligned, STAR_AR.out.bai_sorted_aligned.map { id, f -> f}, file(params.STAR_AR_gtf))
+    STAR_AR_COUNTING(STAR_AR.out.bam_sorted_aligned, 
+                    STAR_AR.out.bai_sorted_aligned.map { id, f -> f}, 
+                    file(params.STAR_AR_gtf))
 
     // QC METRICS
-    HSMETRICS(ch_dedup_bam, file(params.STAR_2pass_fasta), file(params.fasta_fai), file(params.HSmetrics_target))
+    HSMETRICS(ch_dedup_bam, 
+                file(params.STAR_2pass_fasta), 
+                file(params.fasta_fai), 
+                file(params.HSmetrics_target))
     //SAMTOOLS_INDEX2(HSMETRICS.out.dupremoved)
-    ON_TARGET(ch_dedup_bam, file(params.STAR_2pass_fasta), file(params.fasta_fai), file(params.fasta_dict), file(params.HSmetrics_target))
-    RNASEQMETRICS(ch_dedup_bam, file(params.HSmetrics_refFlat))
-    COLLECTALIGNMENTMETRICS(ch_dedup_bam, file(params.STAR_2pass_fasta))
-    INNER_DISTANCE(ch_dedup_bam, file(params.HSmetrics_bed), file(params.HSmetrics_bed12))
-    INFER_EXPERIMENT(ch_dedup_bam, file(params.HSmetrics_bed), file(params.HSmetrics_bed12))
-    JUNCTION_ANNOTATION(ch_dedup_bam, file(params.HSmetrics_bed), file(params.HSmetrics_bed12))
-    JUNCTION_SATURATION(ch_dedup_bam, file(params.HSmetrics_bed), file(params.HSmetrics_bed12))
+    ON_TARGET(ch_dedup_bam, 
+                file(params.STAR_2pass_fasta), 
+                file(params.fasta_fai), 
+                file(params.fasta_dict), 
+                file(params.HSmetrics_target))
+    RNASEQMETRICS(ch_dedup_bam, 
+                    file(params.HSmetrics_refFlat))
+    COLLECTALIGNMENTMETRICS(ch_dedup_bam, 
+                            file(params.STAR_2pass_fasta))
+    INNER_DISTANCE(ch_dedup_bam, 
+                    file(params.HSmetrics_bed), 
+                    file(params.HSmetrics_bed12))
+    INFER_EXPERIMENT(ch_dedup_bam, 
+                    file(params.HSmetrics_bed), 
+                    file(params.HSmetrics_bed12))
+    JUNCTION_ANNOTATION(ch_dedup_bam, 
+                        file(params.HSmetrics_bed), 
+                        file(params.HSmetrics_bed12))
+    JUNCTION_SATURATION(ch_dedup_bam, 
+                        file(params.HSmetrics_bed), 
+                        file(params.HSmetrics_bed12))
     BAMTOBED(ch_star2_sorted_bai)
     PRESEQ(BAMTOBED.out.sorted_bed)
 
 
     // RNAseq Variant calling GATK pipeline
-    SPLITNCIGARREADS(ch_dedup_bam, file(params.STAR_2pass_fasta), file(params.fasta_fai), file(params.fasta_dict))
-    BASERECALIBRATOR(SPLITNCIGARREADS.out.split_bam, file(params.STAR_2pass_fasta), file(params.fasta_fai), file(params.fasta_dict), file(params.known_vcf), file(params.known_vcf_tbi))
-    APPLYBQSR(BASERECALIBRATOR.out.table, file(params.STAR_2pass_fasta), file(params.fasta_fai), file(params.fasta_dict), file(params.known_vcf), file(params.known_vcf_tbi))
-    HAPLOTYPECALLER(APPLYBQSR.out.BQSR_bam, file(params.STAR_2pass_fasta), file(params.fasta_fai), file(params.fasta_dict), file(params.known_vcf), file(params.known_vcf_tbi))
+    SPLITNCIGARREADS(ch_dedup_bam, 
+                        file(params.STAR_2pass_fasta), 
+                        file(params.fasta_fai), 
+                        file(params.fasta_dict))
+
+    BASERECALIBRATOR(SPLITNCIGARREADS.out.split_bam, 
+                        file(params.STAR_2pass_fasta), 
+                        file(params.fasta_fai), 
+                        file(params.fasta_dict), 
+                        file(params.known_vcf), 
+                        file(params.known_vcf_tbi))
+    APPLYBQSR(BASERECALIBRATOR.out.table, 
+                file(params.STAR_2pass_fasta), 
+                file(params.fasta_fai), 
+                file(params.fasta_dict), 
+                file(params.known_vcf), 
+                file(params.known_vcf_tbi))
+    HAPLOTYPECALLER(APPLYBQSR.out.BQSR_bam, 
+                    file(params.STAR_2pass_fasta), 
+                    file(params.fasta_fai), 
+                    file(params.fasta_dict), 
+                    file(params.known_vcf), 
+                    file(params.known_vcf_tbi))
     //TABIX(HAPLOTYPECALLER.out.vcf)
     VARIANTFILTRATION(HAPLOTYPECALLER.out.vcf
-        .join(HAPLOTYPECALLER.out.tbi, failOnMismatch:true, failOnDuplicate:true), file(params.STAR_2pass_fasta), file(params.fasta_fai), file(params.fasta_dict))
+                    .join(HAPLOTYPECALLER.out.tbi, failOnMismatch:true, failOnDuplicate:true), 
+                    file(params.STAR_2pass_fasta), 
+                    file(params.fasta_fai), 
+                    file(params.fasta_dict))
 
     SNPEFF_DOWNLOAD(db_name)
-    SNPEFF_SNPEFF(HAPLOTYPECALLER.out.vcf, db_name, SNPEFF_DOWNLOAD.out.cache)
+    SNPEFF_SNPEFF(HAPLOTYPECALLER.out.vcf, 
+                    db_name, 
+                    SNPEFF_DOWNLOAD.out.cache)
 
 
     //VEP(HAPLOTYPECALLER.out.vcf, assembly, species, version, cache)

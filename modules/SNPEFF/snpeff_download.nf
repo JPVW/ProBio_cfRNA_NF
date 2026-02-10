@@ -12,6 +12,6 @@ process SNPEFF_DOWNLOAD {
 
     script:
     """
-    snpEff download -v -dataDir \${PWD}/snpeff_cache  $snpeff_db
+    snpEff download -v -dataDir \${PWD}/snpeff_cache  ${snpeff_db}
     """
 }

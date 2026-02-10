@@ -10,8 +10,8 @@ process STAR_AR_COUNTING {
   path(AR_gtf)
 
   output:
-  tuple val(sample_id), path("${sample_id}_AR_genes.csv")                                 , emit: AR_genes
-  tuple val(sample_id), path("${sample_id}_AR_featureCounts.txt")                         , emit: AR_gene_featureCounts
+  tuple val(sample_id), path("${sample_id}_AR_genes.csv")                                 , optional: true, emit: AR_genes
+  tuple val(sample_id), path("${sample_id}_AR_featureCounts.txt")                         , optional: true, emit: AR_gene_featureCounts
   tuple val(sample_id), path("${sample_id}_dedup_AR_genes.csv")                           , optional: true, emit: dedup_AR_genes
   tuple val(sample_id), path("${sample_id}_dedup_AR_Aligned,sortedByCoord.out.bam")       , optional: true, emit: AR_bam_dedup
   tuple val(sample_id), path("${sample_id}_dedup_AR_Aligned,sortedByCoord.out.bam.bai")   , optional: true, emit: AR_bai_dedup
@@ -50,13 +50,8 @@ process STAR_AR_COUNTING {
   else
   echo "Sample is empty, skipping deduplication"
 
-  featureCounts -p -a $AR_gtf \\
-    -s 2 -g gene_id -T 16 -t exon \\
-    -o ${sample_id}_AR_featureCounts.txt ${bam_sorted_aligned}
-
-  cut -f1,6,7- ${sample_id}_AR_featureCounts.txt | sed 1d > ${sample_id}_AR_genes.csv
   fi
-    """
+  """
 }
 
     

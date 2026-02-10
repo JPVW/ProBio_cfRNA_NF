@@ -21,8 +21,8 @@ process APPLYBQSR {
     gatk ApplyBQSR \
         --input ${split_bam} \
         --output ${sample_id}.aligned.duplicates_marked.recalibrated.bam \
-        --reference $fasta \
+        --reference ${fasta} \
         --use-original-qualities \
-        --bqsr-recal-file $bqsr_table 
+        --bqsr-recal-file ${bqsr_table} 
     """
 }

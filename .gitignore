@@ -10,8 +10,8 @@ work/
 results/
 data/
 
-resource/genomedir/
-resource/AR_subset_VanAllen/
-resource/snpeff_cache/
-resource/vep_cache/
+resources/genomedir/
+resources/AR_subset_VanAllen/
+resources/snpeff_cache/
+resources/vep_cache/
 singularity_cache
